@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            AntdUI.StepsItem stepsItem4 = new AntdUI.StepsItem();
-            AntdUI.StepsItem stepsItem5 = new AntdUI.StepsItem();
-            AntdUI.StepsItem stepsItem6 = new AntdUI.StepsItem();
+            AntdUI.StepsItem stepsItem1 = new AntdUI.StepsItem();
+            AntdUI.StepsItem stepsItem2 = new AntdUI.StepsItem();
+            AntdUI.StepsItem stepsItem3 = new AntdUI.StepsItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormExcel2PDF));
             this.uploadDragger = new AntdUI.UploadDragger();
             this.label1 = new AntdUI.Label();
@@ -93,14 +93,14 @@
             // 
             // steps
             // 
-            stepsItem4.Description = "选择待转换的Excel文件";
-            stepsItem4.Title = "选择文件";
-            stepsItem5.Description = "Excel文件转PDF文件";
-            stepsItem5.Title = "文件转换";
-            stepsItem6.Title = "转换完成";
-            this.steps.Items.Add(stepsItem4);
-            this.steps.Items.Add(stepsItem5);
-            this.steps.Items.Add(stepsItem6);
+            stepsItem1.Description = "选择待转换的Excel文件";
+            stepsItem1.Title = "选择文件";
+            stepsItem2.Description = "Excel文件转PDF文件";
+            stepsItem2.Title = "文件转换";
+            stepsItem3.Title = "转换完成";
+            this.steps.Items.Add(stepsItem1);
+            this.steps.Items.Add(stepsItem2);
+            this.steps.Items.Add(stepsItem3);
             this.steps.Location = new System.Drawing.Point(130, 47);
             this.steps.Name = "steps";
             this.steps.Size = new System.Drawing.Size(808, 63);
@@ -204,6 +204,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormExcel2PDF";
+            this.Resizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormExcel2PDF";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormExcel2PDF_FormClosing);
