@@ -20,7 +20,7 @@ workbook.Save();
 
 double getHeight(string text, double columnWidth, ExcelFont font)
 {
-    // 新建一个worksheet，将文本添加到单元格中，并设置单元格字体为font，然后设置单元格自动调整行高、列宽，然后获取单元格行高
+    // 新建一个worksheet，将文本添加到单元格中，并设置单元格列宽为columnWidth、字体为font，然后设置单元格自动调整行高，返回单元格行高
     var tempWorkbook = new Workbook();
     var tempSheet = tempWorkbook.Worksheets[0];
     tempSheet.Range["A1"].Text = text;
