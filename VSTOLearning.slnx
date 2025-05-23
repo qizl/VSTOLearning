@@ -1,0 +1,18 @@
+<Solution>
+  <Project Path="AutoAdjustExcelMergedCellsHeight/AutoAdjustExcelMergedCellsHeight.csproj" />
+  <Project Path="FirstExcelAddIn/FirstExcelAddIn.csproj" Id="caf97a40-bc64-4148-8c6b-e929ec086196">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
+  <Project Path="FirstWorkbookCustomization/FirstWorkbookCustomization.csproj">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
+  <Project Path="MyExcelRibbon/MyExcelRibbon.csproj">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
+  <Project Path="Ribbon_Update_At_Runtime/Ribbon_Update_At_Runtime.csproj" Id="ef82fd25-8a77-4efd-a520-48d90ec07f64">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
+  <Project Path="WinFormInput/WinFormInput.csproj">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
+</Solution>
