@@ -26,6 +26,7 @@ public partial class Program
             Verb = "open"
         });
     }
+
     static void autoAdjustMergedCellsHeight(Workbook workbook)
     {
         // 计算合并单元格的高度
@@ -68,17 +69,16 @@ public partial class Program
         // 设置打印区域外边线
         var printAreaStr = "E4:I18";
         worksheet.PageSetup.PrintArea = printAreaStr;
-        CellRange printArea = worksheet.Range[printAreaStr];
+        var printRange = worksheet.Range[printAreaStr];
         void drawBorder(Spire.Xls.Collections.BordersCollection borders, BordersLineType lineType)
         {
             borders[lineType].LineStyle = LineStyleType.Thin;
             borders[lineType].Color = Color.Black;
         }
-        var topRow = printArea.Row;
-        drawBorder(printArea.Rows.First().Borders, BordersLineType.EdgeTop);
-        drawBorder(printArea.Columns.Last().Borders, BordersLineType.EdgeRight);
-        drawBorder(printArea.Rows.Last().Borders, BordersLineType.EdgeBottom);
-        drawBorder(printArea.Columns.First().Borders, BordersLineType.EdgeLeft);
+        drawBorder(printRange.Rows.First().Borders, BordersLineType.EdgeTop);
+        drawBorder(printRange.Columns.Last().Borders, BordersLineType.EdgeRight);
+        drawBorder(printRange.Rows.Last().Borders, BordersLineType.EdgeBottom);
+        drawBorder(printRange.Columns.First().Borders, BordersLineType.EdgeLeft);
 
         //worksheet.PrintRange.BorderAround();
     }
